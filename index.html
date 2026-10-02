@@ -4,12 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ARSINOE</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #080808;
+      color: #f2f2f2;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 40px;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 28px;
+      letter-spacing: 6px;
+      font-weight: 500;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    .hero {
+      min-height: calc(100vh - 90px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(70px, 18vw, 220px);
+      font-weight: 300;
+      letter-spacing: 12px;
+    }
+
+    .hero p {
+      margin-top: 25px;
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #aaa;
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>ARSINOE</h1>
-  <p>Fashion Design & Creative Direction</p>
+  <header>
+    <div class="logo">ARSINOE</div>
 
-</body>
-</html>
+    <nav>
+      <a href="#">SHOP</a>
+      <a href="#">COLLECTIONS</a>
+      <a href="#">ABOUT</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <h1>ARSINO
