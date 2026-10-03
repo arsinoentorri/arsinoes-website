@@ -7,6 +7,7 @@
   <title>yourStyl(e)st.26 — Fashion</title>
 
   <style>
+
     @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
     * {
@@ -31,17 +32,16 @@
     .logo {
       display: inline-flex;
       align-items: baseline;
-      letter-spacing: 0;
       white-space: nowrap;
     }
 
-    .logo .your {
+    .your {
       font-size: 14px;
       font-weight: 300;
       letter-spacing: 1px;
     }
 
-    .logo .main {
+    .main-logo {
       font-size: 25px;
       font-weight: 700;
       letter-spacing: 3px;
@@ -64,13 +64,13 @@
 
     nav {
       display: flex;
-      gap: 28px;
+      gap: 25px;
       align-items: center;
     }
 
     nav a {
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 12px;
+      font-family: 'Archivo Black', Arial, sans-serif;
+      font-size: 11px;
       letter-spacing: 1px;
     }
 
@@ -85,20 +85,168 @@
       padding: 60px 20px;
     }
 
-    .home .logo .your {
-      font-size: clamp(25px, 5vw, 55px);
+    .home .your {
+      font-size: clamp(24px, 5vw, 55px);
       font-weight: 300;
-      letter-spacing: 2px;
     }
 
-    .home .logo .main {
-      font-size: clamp(55px, 13vw, 170px);
+    .home .main-logo {
+      font-size: clamp(50px, 13vw, 170px);
       font-weight: 700;
-      letter-spacing: 8px;
+      letter-spacing: 7px;
     }
 
     .home p {
-      margin-top: 20px;
+      margin-top: 25px;
       color: #999;
       font-size: 12px;
-      letter-spacing: 4
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 100px 40px;
+      border-top: 1px solid #222;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      margin-bottom: 50px;
+    }
+
+    /* SHOP */
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .product {
+      min-height: 400px;
+      border: 1px solid #292929;
+      display: flex;
+      align-items: flex-end;
+      padding: 25px;
+    }
+
+    .product h3 {
+      font-size: 15px;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+
+    .product p {
+      margin-top: 8px;
+      color: #999;
+      font-size: 13px;
+    }
+
+    /* COLLECTIONS */
+
+    .collections {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .collection {
+      min-height: 350px;
+      border: 1px solid #292929;
+      padding: 30px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .collection h3 {
+      font-size: 22px;
+      letter-spacing: 3px;
+      font-weight: 400;
+    }
+
+    /* LOOKBOOK */
+
+    .lookbook {
+      min-height: 400px;
+      border: 1px solid #292929;
+      display: flex;
+      align-items: flex-end;
+      padding: 30px;
+    }
+
+    .lookbook h3 {
+      font-size: 22px;
+      letter-spacing: 3px;
+      font-weight: 400;
+    }
+
+    /* ABOUT */
+
+    .about {
+      max-width: 700px;
+    }
+
+    .about p {
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      max-width: 700px;
+    }
+
+    .contact p {
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 40px;
+      border-top: 1px solid #222;
+      display: flex;
+      justify-content: space-between;
+      color: #777;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 22px 20px;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        font-size: 8px;
+      }
+
+      section {
+        padding: 70px 20px;
+      }
+
+      .home .your {
+        font-size: 20px;
+      }
+
+      .home .main-logo {
+        font-size: 40
