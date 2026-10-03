@@ -7,6 +7,8 @@
   <title>yourStyl(e)st.26 — Fashion</title>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
     * {
       margin: 0;
       padding: 0;
@@ -63,11 +65,13 @@
     nav {
       display: flex;
       gap: 28px;
+      align-items: center;
     }
 
     nav a {
+      font-family: 'Archivo Black', sans-serif;
       font-size: 12px;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
 
     /* HOME */
@@ -97,159 +101,4 @@
       margin-top: 20px;
       color: #999;
       font-size: 12px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-    }
-
-    /* SHOP */
-
-    section {
-      padding: 100px 40px;
-      border-top: 1px solid #222;
-    }
-
-    .section-title {
-      font-size: 28px;
-      font-weight: 400;
-      letter-spacing: 4px;
-      margin-bottom: 50px;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .product {
-      min-height: 400px;
-      border: 1px solid #292929;
-      display: flex;
-      align-items: flex-end;
-      padding: 25px;
-    }
-
-    .product h3 {
-      font-size: 15px;
-      letter-spacing: 2px;
-      font-weight: 400;
-    }
-
-    .product p {
-      margin-top: 8px;
-      color: #999;
-      font-size: 13px;
-    }
-
-    /* COLLECTIONS */
-
-    .collections {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-    }
-
-    .collection {
-      min-height: 350px;
-      border: 1px solid #292929;
-      padding: 30px;
-      display: flex;
-      align-items: flex-end;
-    }
-
-    .collection h3 {
-      font-size: 22px;
-      letter-spacing: 3px;
-      font-weight: 400;
-    }
-
-    /* ABOUT */
-
-    .about {
-      max-width: 700px;
-    }
-
-    .about p {
-      color: #aaa;
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    /* FOOTER */
-
-    footer {
-      padding: 40px;
-      border-top: 1px solid #222;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #777;
-      font-size: 11px;
-      letter-spacing: 2px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 700px) {
-
-      header {
-        padding: 22px 20px;
-      }
-
-      .logo .your {
-        font-size: 10px;
-      }
-
-      .logo .main {
-        font-size: 18px;
-        letter-spacing: 2px;
-      }
-
-      nav {
-        gap: 14px;
-      }
-
-      nav a {
-        font-size: 9px;
-      }
-
-      section {
-        padding: 70px 20px;
-      }
-
-      .home .logo .your {
-        font-size: 22px;
-      }
-
-      .home .logo .main {
-        font-size: 42px;
-        letter-spacing: 4px;
-      }
-
-      .products {
-        grid-template-columns: 1fr;
-      }
-
-      .collections {
-        grid-template-columns: 1fr;
-      }
-
-      .product {
-        min-height: 300px;
-      }
-
-      footer {
-        padding: 30px 20px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- HEADER -->
-
-  <header>
-    <a href="#home" class="logo">
-      <span class="your">your</span><span class="main">Styl(e)st.26</span>
-   
+      letter-spacing: 4
